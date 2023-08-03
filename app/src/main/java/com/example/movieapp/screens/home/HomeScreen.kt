@@ -57,7 +57,9 @@ fun MainContent(modifier: Modifier = Modifier, navController: NavController) {
         LazyColumn() {
             items(items = itemList) {
                 MovieRow(movie = it) {
-                    navController.navigate(route = MovieScreens.DetailScreen.name)
+                    navController.navigate(
+                        route = MovieScreens.DetailScreen.name+"/$it", //passing arguments to the details screen
+                    )
                 }
             }
         }
