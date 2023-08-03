@@ -32,7 +32,7 @@ fun MovieNavigation() {
         ) {
             DetailsScreen(
                 navController = navController,
-                movieData = it.arguments?.getString("movieData")
+                movieId = it.arguments?.getString("movieData")
             )
         }
     }
