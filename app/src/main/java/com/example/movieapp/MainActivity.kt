@@ -51,11 +51,9 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyApp(content: @Composable () -> Unit) {
     MovieAppTheme {
-
         content()
     }
 }

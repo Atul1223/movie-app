@@ -43,14 +43,14 @@ fun DetailsScreen(
             )
         }
     ) {
-        Details(movieData = movieData.toString(), modifier = Modifier.padding(paddingValues = it))
+        Details(movieId = movieData.toString(), modifier = Modifier.padding(paddingValues = it))
     }
 }
 
 @Composable
-fun Details(modifier: Modifier = Modifier, movieData: String) {
+fun Details(modifier: Modifier = Modifier, movieId: String) {
     Text(
         modifier = modifier,
-        text = movieData
+        text = movieId
     )
 }
